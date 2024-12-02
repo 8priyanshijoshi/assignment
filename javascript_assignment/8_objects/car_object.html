@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var car = {
+            brand : "Maruti",
+            model : "Swift",
+            year : 2023
+        }
+
+        car.year = 2024;
+        console.log(car.year);
+        
+
+        document.write(car.brand + " " + car.model)
+
+        car.color = "Black"
+        console.log(car);
+        
+        for(const c in car){
+            if(Object.prototype.hasOwnProperty.call(car, c)){
+                console.log(c + "=>" + car[c]);
+            }
+        }
+    </script>
+</body>
+</html>
